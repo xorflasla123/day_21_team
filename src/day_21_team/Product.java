@@ -30,6 +30,7 @@ public class Product implements interface_01{
 		// TODO Auto-generated method stub
 		roop=true;
 		while(roop) {
+			System.out.println();
 			System.out.println("====물품관리====");
 			System.out.println("1.확인 2.등록 3.수정 4.삭제 5.뒤로");
 			System.out.print(">>> ");
@@ -56,9 +57,7 @@ public class Product implements interface_01{
 		System.out.println("물품번호\t물품이름\t물품수량");
 		System.out.println("------------------------------");
 		while(rs.next()) { 
-			System.out.println(rs.getString("serial"));
-			System.out.println(rs.getString("name"));
-			System.out.println(rs.getInt("count"));
+			System.out.println(rs.getString("serial")+"\t"+rs.getString("name")+"\t"+rs.getInt("count"));
 			System.out.println("=================");
 		}
 	} catch (SQLException e) {
@@ -72,11 +71,11 @@ public class Product implements interface_01{
 	@Override
 	public void add() {
 		// TODO Auto-generated method stub
-		System.out.println("물품번호 입력 : ");
+		System.out.print("물품번호 입력 : ");
 		pd.setSerial(input.next());
-		System.out.println("물품이름 입력 : ");
+		System.out.print("물품이름 입력 : ");
 		pd.setName(input.next());
-		System.out.println("물품수량 입력 : ");
+		System.out.print("물품수량 입력 : ");
 		pd.setCount(input.nextInt());
 		String sql = "insert into product(serial, name, count) values(?,?,?)";
 		try {

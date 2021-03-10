@@ -11,6 +11,7 @@ public class MainClass {
 		Event e = new Event();
 		
 		while(true) {
+			System.out.println("Spring 회사 관리 시스템");
 			System.out.println("1.인사관리 2.물품관리 3.이벤트관리 4.종료");
 			System.out.print(">>> ");
 			num = input.nextInt();
@@ -29,6 +30,7 @@ public class MainClass {
 				System.out.println("종료합니다");
 				System.exit(0);
 			}
+			System.out.println();
 		}
 	}
 }

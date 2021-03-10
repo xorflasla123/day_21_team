@@ -29,6 +29,7 @@ public class Event implements interface_01 {
 		// TODO Auto-generated method stub
 		roop = true;
 		while (roop) {
+			System.out.println();
 			System.out.println("====이벤트관리====");
 			System.out.println("1.확인 2.등록 3.수정 4.삭제 5.뒤로");
 			System.out.print(">>> ");
