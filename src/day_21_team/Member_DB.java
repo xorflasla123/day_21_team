@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 
 public class Member_DB {
-	private String url = "jdbc:oracle:thin:@210.108.48.214:1521:xe";
+	private String url = "jdbc:oracle:thin:@210.108.48.214:1521";
 	private String id = "team5";
 	private String pwd = "1004";
 
