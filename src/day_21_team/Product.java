@@ -1,4 +1,4 @@
-package day_21_team_01;
+package day_21_team;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
